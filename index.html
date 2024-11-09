@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-t from-gray-400 to-[#13183F] flex items-center justify-center">
+
+  <!-- Weather card section -->
+  <div class="w-full max-w-md p-6 bg-white rounded-2xl">
+  
+<!-- Ttitle -->
+<h1 class="text-3xl font-semibold text-center text-gray-900 mb-8"> Check your city's weather</h1>
+
+<!-- City and search button -->
+<div class="flex items-center gap-4 mb-6">
+ <input type="text" id="input" placeholder="Enter a city" class="p-3 w-full bg-opacity-75 bg-gray-300 text-gray-700  placeholder-gray-500 border-white rounded-lg "/>
+ <button id="searchButton" class="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-200">Search</button>
+</div>
+
+<!-- Weather details -->
+<div class="text-center flex flex-col">
+
+  <span id="city" class="text-3xl font-semibold text-black"></span>
+  <span id="temperature" class="text-3xl font-bold text-green-500"></span>
+ <span id="comment" class="text-xl font-light text-red-500"></span>
+</div>
+
+<!-- Error message -->
+<span id="error" class="text-center text-red-500 mt-4 text-md font-light underline "></span>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
